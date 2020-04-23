@@ -9,6 +9,7 @@ class Subject {
 
     isSubscribed(f) {
         /* Help us check if the observer for an user is already subscribed */
+        console.log(`isSubscribed ? => ${f} ==> ${this.observers.filter(subscriber => subscriber === f).length}`);
         return this.observers.filter(subscriber => subscriber === f).length;
     }
 

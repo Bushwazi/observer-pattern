@@ -43,6 +43,11 @@ class TechThreadObserver {
      * a new post from tech is added, this function is invoked by the Subject class
      * when the notify method is called.
      */
-    update(data) {        const listElement = document.createElement('li');        listElement.innerHTML = `[Tech Post] - ${data}`;        this.userUpdates.appendChild(listElement);    }}
+    update(data) {        
+        const listElement = document.createElement('li');        
+        listElement.innerHTML = `[Tech Post] - ${data}`;        
+        this.userUpdates.appendChild(listElement);    
+    }
+}
 
 export default TechThreadObserver;
